@@ -1,0 +1,18 @@
+<div id="observablehq-chart-43fc554b"></div>
+<div id="observablehq-viewof-LABFORCE_RADIO-43fc554b"></div>
+<div id="observablehq-viewof-ARTIST_RADIO-43fc554b"></div>
+<div id="observablehq-viewof-EDUC_RADIO-43fc554b"></div>
+<div id="observablehq-viewof-AGE_RADIO-43fc554b"></div>
+<p>Credit: <a href="https://observablehq.com/d/d94e10bf57926f07">Pie Chart by himani deshpande</a></p>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/d94e10bf57926f07.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-43fc554b"));
+  if (name === "viewof LABFORCE_RADIO") return new Inspector(document.querySelector("#observablehq-viewof-LABFORCE_RADIO-43fc554b"));
+  if (name === "viewof ARTIST_RADIO") return new Inspector(document.querySelector("#observablehq-viewof-ARTIST_RADIO-43fc554b"));
+  if (name === "viewof EDUC_RADIO") return new Inspector(document.querySelector("#observablehq-viewof-EDUC_RADIO-43fc554b"));
+  if (name === "viewof AGE_RADIO") return new Inspector(document.querySelector("#observablehq-viewof-AGE_RADIO-43fc554b"));
+});
+</script>
