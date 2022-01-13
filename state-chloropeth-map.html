@@ -1,0 +1,23 @@
+<div id="observablehq-chart-c5257a1e"></div>
+<div id="observablehq-viewof-YEAR_RADIO-c5257a1e"></div>
+<div id="observablehq-viewof-Occupation_RADIO-c5257a1e"></div>
+<div id="observablehq-viewof-LABFORCE-c5257a1e"></div>
+<div id="observablehq-viewof-EDUC-c5257a1e"></div>
+<div id="observablehq-viewof-AGE-c5257a1e"></div>
+<div id="observablehq-key1-c5257a1e"></div>
+<!-- <p>Credit: <a href="https://observablehq.com/@himanideshpande/chloropeth">Choropleth Numper of People by himani deshpande</a></p> -->
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/69c2636090c74e4c.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-c5257a1e"));
+  if (name === "viewof YEAR_RADIO") return new Inspector(document.querySelector("#observablehq-viewof-YEAR_RADIO-c5257a1e"));
+  if (name === "viewof Occupation_RADIO") return new Inspector(document.querySelector("#observablehq-viewof-Occupation_RADIO-c5257a1e"));
+  if (name === "viewof LABFORCE") return new Inspector(document.querySelector("#observablehq-viewof-LABFORCE-c5257a1e"));
+  if (name === "viewof EDUC") return new Inspector(document.querySelector("#observablehq-viewof-EDUC-c5257a1e"));
+  if (name === "viewof AGE") return new Inspector(document.querySelector("#observablehq-viewof-AGE-c5257a1e"));
+  if (name === "key1") return new Inspector(document.querySelector("#observablehq-key1-c5257a1e"));
+  return ["c"].includes(name);
+});
+</script>
